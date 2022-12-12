@@ -1,7 +1,7 @@
 # TNCP
 This repository is created for our paper.
 ## 1. Experimental Results Download
-Due to the size limitation, our experimental results can be achieved on Google Drive [recorder](http://www.baidu.com).
+Due to the size limitation, our experimental results can be achieved on Google Drive [recorders](https://drive.google.com/file/d/1tauprOI0gvkUiHxzt87NRbfXqV_Ucx95/view?usp=share_link).
 After the download of the package, we ask the directory list should be formed as bellow:
 
     TNCP
