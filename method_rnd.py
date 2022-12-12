@@ -68,7 +68,7 @@ class MethodRND(BaseGraph):
     #     if verbose:
     #         for idx, item in enumerate(self.diff_nodes):
     #             print(f"({idx + 1}) {item}")
-    #     pkl.dump(self.recorder, open(f"./visualization/local/random/{dataset}_recorder.pkl", "wb"))
+    #     pkl.dump(self.recorder, open(f"./figures/local/random/{dataset}_recorder.pkl", "wb"))
 
     def test_total_nodes(self, nodes = None, verbose=True):
         target_nodes = nodes or self.graph.nodes
@@ -85,7 +85,7 @@ class MethodRND(BaseGraph):
         # if verbose:
         #     for idx, item in enumerate(self.diff_nodes):
         #         print(f"({idx + 1}) {item}")
-        # pkl.dump(self.data_recorder, open(f"./visualization/local/ours/{dataset}_recorder.pkl", "wb"))
+        # pkl.dump(self.data_recorder, open(f"./figures/local/ours/{dataset}_recorder.pkl", "wb"))
 
     def multiprocess_search(self, num_workers: int = 1):
         cost = time.process_time()
@@ -115,7 +115,7 @@ class MethodRND(BaseGraph):
 if __name__ == "__main__":
     for dataset in dataset_names:
         # dataset = 'brightkite'
-        # if os.path.exists(f"./visualization/local/random/{dataset}_recorder.pkl"):
+        # if os.path.exists(f"./figures/local/random/{dataset}_recorder.pkl"):
         #     continue
         edges = pkl.load(open(f"./datasets/{dataset}.pkl", "rb"))
         graph = nx.Graph(edges)

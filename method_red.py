@@ -76,7 +76,7 @@ class MethodRED(BaseGraph):
         # if verbose:
         #     for idx, item in enumerate(self.diff_nodes):
         #         print(f"({idx + 1}) {item}")
-        # pkl.dump(self.data_recorder, open(f"./visualization/local/ours/{dataset}_recorder.pkl", "wb"))
+        # pkl.dump(self.data_recorder, open(f"./figures/local/ours/{dataset}_recorder.pkl", "wb"))
 
     def multiprocess_search(self, num_workers: int = 1):
         cost = time.process_time()
@@ -107,7 +107,7 @@ class MethodRED(BaseGraph):
 if __name__ == "__main__":
     for dataset in dataset_names:
         # dataset = 'brightkite'
-        # if os.path.exists(f"./visualization/global/random/{dataset}_recorder.pkl"):
+        # if os.path.exists(f"./figures/global/random/{dataset}_recorder.pkl"):
         #     continue
         edges = pkl.load(open(f"./datasets/{dataset}.pkl", "rb"))
         graph = nx.Graph(edges)

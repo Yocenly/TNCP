@@ -58,7 +58,7 @@ class ApplicationVisualize:
         plt.legend(fontsize=26)
 
         plt.tight_layout(pad=0.2)
-        plt.savefig(f"./visualization/figures/application.pdf", format='pdf', dpi=2000)
+        plt.savefig(f"./figures/application.pdf", format='pdf', dpi=2000)
         plt.show()
 
 

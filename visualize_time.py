@@ -54,7 +54,7 @@ class TimeVisualize:
         plt.legend(fontsize=22)
 
         plt.tight_layout()
-        plt.savefig(f"./visualization/figures/time_all.pdf", format='pdf', dpi=1000)
+        plt.savefig(f"./figures/time_all.pdf", format='pdf', dpi=1000)
         plt.show()
         pass
 
@@ -88,7 +88,7 @@ class TimeVisualize:
         plt.xticks(axis, names, rotation=0)
         plt.tick_params(labelsize=40)
         plt.tight_layout()
-        plt.savefig(f"./visualization/figures/time_rest.png", format='png', dpi=1000)
+        plt.savefig(f"./figures/time_rest.png", format='png', dpi=1000)
         plt.show()
 
 

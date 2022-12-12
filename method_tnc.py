@@ -131,7 +131,7 @@ class MethodTNC(BaseGraph):
     #     # if verbose:
     #     #     for idx, item in enumerate(self.diff_nodes):
     #     #         print(f"({idx + 1}) {item}")
-    #     pkl.dump(self.data_recorder, open(f"./visualization/global/ours/{dataset}_recorder.pkl", "wb"))
+    #     pkl.dump(self.data_recorder, open(f"./figures/global/ours/{dataset}_recorder.pkl", "wb"))
 
     def test_total_nodes(self, nodes=None, verbose=True):
         target_nodes = nodes or self.graph.nodes
@@ -148,7 +148,7 @@ class MethodTNC(BaseGraph):
         # if verbose:
         #     for idx, item in enumerate(self.diff_nodes):
         #         print(f"({idx + 1}) {item}")
-        # pkl.dump(self.data_recorder, open(f"./visualization/local/ours/{dataset}_recorder.pkl", "wb"))
+        # pkl.dump(self.data_recorder, open(f"./figures/local/ours/{dataset}_recorder.pkl", "wb"))
 
     def multiprocess_search(self, num_workers: int = 1):
         cost = time.process_time()
