@@ -67,7 +67,7 @@ class TimeVisualize:
         plt.axes().set_yscale('log')
 
         names = ['Gowalla', 'Citeseer', 'RoadNet', 'Google']
-        methods = ['sv', 'aprc']
+        methods = ['SV', 'ATNC']
         bar_colors = ['#ffb549', '#41b6e6']
         width = 0.4
         axis_gap = 1.5
