@@ -42,12 +42,13 @@ class CalculateCIS(BaseGraph):
         S_f = [node for node in self.graph.nodes if self.recorder[node]['influence'] >= influence_threshold]
         return sum([self.recorder[node][used_metric] for node in S_f]) / len(S_f)
 
+
 if __name__ == "__main__":
     for dataset in dataset_names:
         graph = nx.Graph(pkl.load(open(f"./datasets/{dataset}.pkl", "rb")))
-        recorder = pkl.load(open(f"./recorders/ATNC/{dataset}_recorder.pkl", "rb"))
+        recorder = pkl.load(open(f"./recorders/SV/{dataset}_recorder.pkl", "rb"))
         print(dataset)
         cis_obj = CalculateCIS(graph)
         cs_cis = cis_obj.calculate_cis(recorder)
         ns_cis = cis_obj.calculate_cis(recorder, 'stability')
-        print(f"CS-based CIS: {cs_cis: .5f}; NS-based CIS: {ns_cis: .5f}.")
+        print(f"CS-based CIS: {cs_cis: .5f}; NR-based CIS: {ns_cis: .5f}.")

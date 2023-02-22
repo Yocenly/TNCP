@@ -66,5 +66,11 @@ CIS_DATA = {
         'HepPh': 1.59235, 'AstroPh': 3.52929, 'CondMat': 2.89991, 'Citeseer': 1.90089,
         'USAir': 2.58824, 'USPower': 1.61728, 'RoadNet': 1.85833,
         'EDU': 2.45167, 'Indo': 1.22011, 'Arabic': 1.23581, 'Google': 3.04452,
-    }
+    },
+    'SV': {
+        'TVShow': 2.84103, "LastFM": 3.60471, 'Facebook': 6.69573, 'DeezerEU': 4.07633, 'Gowalla': 3.25961,
+        'HepPh': 1.92180, 'AstroPh': 4.24175, 'CondMat': 3.77362, 'Citeseer': 3.02556,
+        'USAir': 4.00000, 'USPower': 1.63894, 'RoadNet': 1.86044,
+        'EDU': 2.46849, 'Indo': 1.31141, 'Arabic': 1.28204, 'Google': 4.65759,
+    },
 }

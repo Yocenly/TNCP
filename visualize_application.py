@@ -33,7 +33,7 @@ class ApplicationVisualize:
                     'USAir', 'USPower', 'RoadNet',
                     'EDU', 'Indo', 'Arabic', 'Google']
         methods = ['ORI', 'ATNC']
-        labels = ['CS-based', 'NS-based']
+        labels = ['CS-based', 'NR-based']
         bar_colors = ['#13334c', '#fd5f00']
         width = 0.25
         axis_gap = 1.5
