@@ -75,7 +75,7 @@ class MethodRND(BaseGraph):
         with tqdm(total=len(target_nodes), desc=self.method, ncols=150, colour='YELLOW') as bar:
             ticks = time.process_time()
             for node in target_nodes:
-                self.local_random_search(node, 10)
+                self.local_random_search(node, 100)
                 bar.set_postfix_str(
                     f"[{self.k_core[node]}, {self.recorder[node]['strength']}, {self.recorder[node]['stability']}];"
                     f" Puffy Counts: {len(self.diff_nodes)}; Total Delta: {self.delta: .4f};"

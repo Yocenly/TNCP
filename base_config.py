@@ -9,7 +9,7 @@ STRONG_SUPPORT = 2
 GENERAL_SUPPORT = 3
 
 dataset_names = ['TVShow', 'LastFM', 'Facebook', 'DeezerEU', 'HepPh', 'AstroPh', 'CondMat',
-                 'USAir', 'USPower', 'EDU', 'Indo', 'Arabic', 'Gowalla', 'Google', 'Citeseer', 'RoadNet']
+                 'USAir', 'USPower', 'EDU', 'Indo', 'Arabic', 'Gowalla', 'Citeseer', 'Google', 'RoadNet']
 
 method_names = ['RED', 'RND', 'KNM', 'SV', 'TNC', 'ATNC']
 

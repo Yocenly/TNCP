@@ -32,9 +32,9 @@ class ApplicationVisualize:
                     'HepPh', 'AstroPh', 'CondMat', 'Citeseer',
                     'USAir', 'USPower', 'RoadNet',
                     'EDU', 'Indo', 'Arabic', 'Google']
-        methods = ['ORI', 'ATNC']
-        labels = ['CS-based', 'NR-based']
-        bar_colors = ['#13334c', '#fd5f00']
+        methods = ['ORI', 'SV', 'ATNC']
+        labels = ['CS-based', 'SV-based', 'ATNC-based']
+        bar_colors = ['#13334c', '#2E94B9', '#fd5f00']
         width = 0.25
         axis_gap = 1.5
         axis = np.arange(0, axis_gap * len(datasets), axis_gap)
@@ -55,7 +55,7 @@ class ApplicationVisualize:
         plt.yticks(range(0, 10, 2))
         plt.ylabel("CIS", size=26)
         plt.tick_params(labelsize=24)
-        plt.legend(fontsize=26)
+        plt.legend(fontsize=28)
 
         plt.tight_layout(pad=0.2)
         plt.savefig(f"./figures/application.pdf", format='pdf', dpi=2000)

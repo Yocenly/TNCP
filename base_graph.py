@@ -70,17 +70,18 @@ class BaseGraph:
         :param graph:
         :return:
         """
-        graph = graph.copy() if isinstance(graph, nx.Graph) else nx.Graph(graph)
-        k_core, k = dict(nx.degree(graph)), min(dict(nx.degree(graph)).values())
-        while True:
-            while min(nx.degree(graph), key=lambda x: x[1])[1] <= k:
-                for node in list(graph.nodes):
-                    if nx.degree(graph, node) <= k:
-                        k_core[node] = k
-                        graph.remove_node(node)
-                if not graph:
-                    return k_core
-            k = min(nx.degree(graph), key=lambda x: x[1])[1]
+        # graph = graph.copy() if isinstance(graph, nx.Graph) else nx.Graph(graph)
+        # k_core, k = dict(nx.degree(graph)), min(dict(nx.degree(graph)).values())
+        # while True:
+        #     while min(nx.degree(graph), key=lambda x: x[1])[1] <= k:
+        #         for node in list(graph.nodes):
+        #             if nx.degree(graph, node) <= k:
+        #                 k_core[node] = k
+        #                 graph.remove_node(node)
+        #         if not graph:
+        #             return k_core
+        #     k = min(nx.degree(graph), key=lambda x: x[1])[1]
+        return nx.core_number(graph)
 
     @staticmethod
     def update_k_core_after_deletion(graph: nx.Graph, edges: list, k_core: dict, value_change: bool = True):
